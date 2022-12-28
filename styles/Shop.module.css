@@ -1,0 +1,100 @@
+.body p h1 h2 h3 {
+  background-color: rgb(251, 252, 253) !important;
+  padding: 0;
+  margin: 0;
+  background-position: none;
+}
+.linkContainer {
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.navContainer {
+  margin: auto;
+  background-color: rgb(179, 206, 197);
+  width: 90vw;
+  height: 10vh;
+}
+
+.productsContainer {
+  margin: 2rem auto;
+  /* background-color: rgb(221, 227, 227); */
+  background-color: rgb(59, 60, 61);
+  width: 90vw;
+  height: 90vh;
+  border: solid rgb(117, 114, 114);
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+/* ======================
+
+          WATCHBOXES          
+
+========================= */
+
+.watchBox {
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 33%;
+  width: 33%;
+  border: 3px solid rgb(173, 174, 173);
+}
+
+.watchImageContainer {
+  height: 100%;
+  width: 100%;
+}
+.watchImage {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.watchDescription {
+  margin: 1rem auto;
+  font-size: 2rem;
+  background-color: rgb(59, 60, 61);
+  color: rgb(242, 216, 137);
+}
+.watchPrice {
+  font-size: 2rem;
+  background-color: rgb(59, 60, 61);
+  color: rgb(242, 216, 137);
+}
+.link {
+  text-decoration: none;
+  outline: none;
+  color: rgb(37, 37, 37);
+}
+
+.buttonContainer {
+  font-size: 2rem;
+  background-color: rgb(59, 60, 61);
+  color: rgb(242, 216, 137);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartButton {
+  /* font-family: serif; */
+  margin: 1rem auto;
+  font-weight: 800;
+  font-size: 1.25rem;
+  height: 4rem;
+  width: 10rem;
+  color: #1f1f1f;
+  background-color: rgb(242, 216, 137);
+  border-radius: 2rem;
+  transition: all 0.15s ease-in-out;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  /* font-style: italic; */
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+}
+.cartButton:hover {
+  background-color: rgb(242, 216, 137);
+  box-shadow: 0px 0px 7.5px 0px rgb(255, 255, 255);
+  text-decoration: none;
+}

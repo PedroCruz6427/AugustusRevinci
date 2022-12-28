@@ -1,0 +1,46 @@
+.cartPageSection {
+  margin: 0 auto;
+  background-color: rgb(37, 36, 35);
+  height: 95vh;
+  width: 95vw;
+}
+.watchCartBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: rgb(198, 209, 198);
+  width: 90%;
+  border: solid #676767 5px;
+}
+.imageContainer {
+  height: 15rem;
+  width: 15rem;
+  margin: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.itemDescription {
+  font-size: 3rem;
+}
+.itemPrice {
+  font-size: 2rem;
+}
+
+.totalPrice {
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: rgb(198, 209, 198);
+  border: solid #676767 5px;
+}

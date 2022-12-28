@@ -1,0 +1,57 @@
+.watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  /* font-style: italic; */
+  letter-spacing: 0.3rem;
+}
+
+.watchContainer {
+  height: 70rem;
+  width: 120rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.watchImage {
+  border-radius: 6rem;
+  overflow: hidden;
+}
+.image {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+.description {
+  margin: 2rem auto;
+  padding: 0.75rem;
+  font-size: 4rem;
+  background-color: rgb(198, 209, 198);
+  border: solid #676767 3.5px;
+  border-radius: 2rem;
+}
+.price {
+  padding: 0.75rem;
+  font-size: 3rem;
+  background-color: rgb(198, 209, 198);
+  border: solid #676767 3.5px;
+  border-radius: 2rem;
+}
+.buyButton {
+  margin: 2rem auto;
+  padding: 0.75rem;
+  font-size: 2rem;
+  background-color: rgb(198, 209, 198);
+  border: solid #676767 3.5px;
+  border-radius: 2rem;
+  width: 18rem;
+  cursor: pointer;
+}
+.buyButton:hover {
+  background-color: rgb(242, 216, 137);
+  box-shadow: 0px 0px 7.5px 0px rgb(255, 255, 255);
+  text-decoration: none;
+}
