@@ -30,22 +30,26 @@ export default function CartCheckOutInfo() {
         <link rel="icon" href="/nomos.jpg/" />
       </Head>
       <Navbar />
-      {cart.map(([item]) => {
-        return (
-          <section className={styles.watchCartBox} key={item.id}>
-            <div className={styles.imageContainer}>
-              <img className={styles.image} src={item.image}></img>
-            </div>
-            <div className={styles.rightContainer}>
-              <div className={styles.itemDescription}>{item.description} </div>
-              <div className={styles.itemPrice}>Price: ${item.price}</div>
-            </div>
-          </section>
-        );
-      })}
-      <section className={styles.totalPrice}>
-        <h1>Total Price: ${finalTotal}</h1>
-      </section>
+      <div className={styles.cartContainer}>
+        {cart.map(([item]) => {
+          return (
+            <section className={styles.watchCartBox} key={item.id}>
+              <div className={styles.imageContainer}>
+                <img className={styles.image} src={item.image}></img>
+              </div>
+              <div className={styles.rightContainer}>
+                <div className={styles.itemDescription}>
+                  {item.description}{" "}
+                </div>
+                <div className={styles.itemPrice}>Price: ${item.price}</div>
+              </div>
+            </section>
+          );
+        })}
+        <section className={styles.totalPrice}>
+          <h1>Total Price: ${finalTotal}</h1>
+        </section>
+      </div>
     </section>
   );
 }

@@ -66,9 +66,6 @@ option? rgb(49, 49, 49);
   /* font-style: italic; */
   letter-spacing: 0.3rem;
 }
-/* .modalContainer div:nth-child(odd) {
-  background-color: #aeabab;
-} */
 
 .modalContainer button:hover {
   box-shadow: 0px 0px 5px 0px rgb(149, 149, 149);
@@ -279,6 +276,7 @@ option? rgb(49, 49, 49);
   justify-content: center;
   align-items: center;
   text-align: center;
+  user-select: none;
 }
 .watchSectionLeftH1 {
   padding-bottom: 0.5rem;
@@ -322,7 +320,6 @@ option? rgb(49, 49, 49);
   color: rgb(250, 240, 177);
 }
 .watchList {
-  /* background-color: red; */
   padding: 1rem;
 }
 
@@ -441,6 +438,7 @@ option? rgb(49, 49, 49);
   height: 3vh;
   width: 93%;
   border-radius: 3rem;
+  user-select: none;
 }
 
 .footerContainer button {
@@ -473,37 +471,29 @@ Instread 1rem = 1em = 16px */
 ============================== */
 
 @media (max-width: 37.5em) {
-  /* .body {
-    min-width: 375px;
-    width: 100%;
-  } */
-
   .siteLogo {
     /* display: none; */
   }
-
-  .siteLogo p {
-    margin: 1rem;
-    font-style: italic;
-    font-weight: 800;
-    letter-spacing: 0.5rem;
-    font-size: 2rem;
-    color: rgb(242, 216, 137);
-    text-align: center;
+  .siteIntro {
+    padding-top: 0;
   }
-
+  .introInfoContainer {
+    width: 100%;
+  }
   .femaleImg {
     width: 40vh;
   }
-
+  .womanContainer {
+    order: 2;
+    padding-bottom: 2rem;
+  }
   .watchSectionContainer {
     display: flex;
     flex-direction: column;
   }
 
   .introInfoHeader {
-    /* background-color: aqua; */
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 4rem;
   }
   .introInfoText {
@@ -529,13 +519,10 @@ Instread 1rem = 1em = 16px */
     margin: 0;
     order: 1;
   }
-  .shopButton {
-    display: flex;
-  }
+
   .navButton {
     font-size: 2rem;
     margin: 0;
-    background-color: rgb(127, 142, 255);
   }
 
   .footerContainer {
@@ -546,8 +533,6 @@ Instread 1rem = 1em = 16px */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-align: centers;
-    /* margin-top: 5rem; */
     padding: 0;
     margin: 0 auto;
     height: 15vh;
@@ -560,9 +545,19 @@ Instread 1rem = 1em = 16px */
           600px-900px
 ============================== */
 @media (min-width: 37.5em) and (max-width: 56.25em) {
-  .siteLogo {
-    /* display: none; */
+  .siteIntro {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
   }
+  .introInfoContainer {
+    width: 100%;
+  }
+  .womanContainer {
+    order: 2;
+    padding-bottom: 2rem;
+  }
+
   .femaleImg {
     width: 40vh;
   }
@@ -572,13 +567,7 @@ Instread 1rem = 1em = 16px */
     flex-direction: column;
   }
 
-  .introInfoHeader {
-    /* background-color: aqua; */
-    font-size: 4rem;
-    line-height: 3rem;
-  }
   .introInfoText {
-    /* background-color: rgb(136, 127, 255); */
     display: none;
     font-size: 2rem;
   }
@@ -591,6 +580,7 @@ Instread 1rem = 1em = 16px */
 
   .watchSectionLeftH1 {
     display: none;
+    order: 1;
   }
   .watchListContainer {
     display: none;
@@ -600,12 +590,10 @@ Instread 1rem = 1em = 16px */
     margin: 0;
     order: 1;
   }
-  .shopButton {
-    display: flex;
-  }
+
   .navButton {
     margin: 0;
-    background-color: rgb(221, 127, 255);
+    background-color: rgb(226, 222, 222);
   }
 }
 
@@ -616,6 +604,7 @@ Instread 1rem = 1em = 16px */
   .siteLogo {
     /* display: none; */
   }
+
   .femaleImg {
     width: 40vh;
   }
@@ -641,9 +630,7 @@ Instread 1rem = 1em = 16px */
     width: 50%;
     margin: 0;
   }
-  .shopButton {
-    display: flex;
-  }
+
   .navButton {
     margin: 0;
     background-color: rgb(221, 127, 255);

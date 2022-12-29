@@ -20,14 +20,11 @@
 
 .productsContainer {
   margin: 2rem auto;
-  /* background-color: rgb(221, 227, 227); */
   background-color: rgb(59, 60, 61);
-  width: 90vw;
-  height: 90vh;
-  border: solid rgb(117, 114, 114);
+  width: 100%;
+  border: solid rgb(114, 117, 116);
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
 }
 /* ======================
 
@@ -38,7 +35,8 @@
 .watchBox {
   box-sizing: border-box;
   margin: 0 auto;
-  height: 33%;
+  margin-bottom: 15rem;
+  height: 33vh;
   width: 33%;
   border: 3px solid rgb(173, 174, 173);
   color: rgb(242, 216, 137);
@@ -107,38 +105,8 @@
 ============================== */
 
 @media (max-width: 56.25em) {
-  /* ======================
-  
-            WATCHBOXES          
-  
-  ========================= */
   .watchBox {
-    box-sizing: border-box;
-    margin: 0 auto;
-    height: 33%;
     width: 50%;
-    margin-bottom: 15rem;
-    border: 3px solid rgb(173, 174, 173);
-    color: rgb(242, 216, 137);
-  }
-  .watchDescription {
-    margin: 1rem auto;
-    font-size: 3rem;
-    background-color: rgb(59, 60, 61);
-    color: rgb(242, 216, 137);
-  }
-  .watchPrice {
-    font-size: 2rem;
-    background-color: rgb(59, 60, 61);
-    color: rgb(242, 216, 137);
-  }
-  .buttonContainer {
-    font-size: 2rem;
-    background-color: rgb(59, 60, 61);
-    color: rgb(242, 216, 137);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -147,12 +115,7 @@
 ============================== */
 
 @media (max-width: 37.5em) {
-  /* ======================
-  
-            WATCHBOXES          
-  
-  ========================= */
-  .watchBox {
+  /* .watchBox {
     box-sizing: border-box;
     margin: 0 auto;
     height: 33%;
@@ -160,5 +123,8 @@
     margin-bottom: 15rem;
     border: 3px solid rgb(173, 174, 173);
     color: rgb(242, 216, 137);
+  } */
+  .watchBox {
+    width: 100%;
   }
 }

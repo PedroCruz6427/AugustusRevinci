@@ -46,17 +46,17 @@ export default function Home() {
       </section>
       <Carousel />
       <section className={styles.footerContainer}>
-        <Link href="/shop">
-          <button>SHOP</button>
-        </Link>
         <Link href="">
           <button>ABOUT</button>
         </Link>
         <Link href="">
-          <button>CUSTOMER CARE</button>
+          <button>ACCESIBILITY</button>
         </Link>
         <Link href="">
-          <button>ACCESIBILITY</button>
+          <button>CUSTOMER CARE</button>
+        </Link>
+        <Link href="/shop">
+          <button>SHOP</button>
         </Link>
       </section>
     </body>

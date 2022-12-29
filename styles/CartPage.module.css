@@ -1,3 +1,8 @@
+/* .cartContainer {
+  border: solid 5px rgb(242, 216, 137);
+  border-radius: 2rem;
+} */
+
 .cartPageSection {
   margin: 0 auto;
   background-color: rgb(37, 36, 35);
@@ -10,8 +15,8 @@
   align-items: center;
   margin: 2rem auto;
   padding: 1rem;
-  /* background-color: rgb(209, 207, 198); */
-  background-color: rgb(250, 240, 177);
+  background-color: rgb(209, 207, 198);
+  /* background-color: rgb(250, 240, 177); */
   width: 90%;
   border: solid #676767 5px;
   border-radius: 2rem;
@@ -59,7 +64,8 @@
   width: 90%;
   display: flex;
   justify-content: flex-end;
-  background-color: rgb(250, 240, 177);
+  /* background-color: rgb(250, 240, 177); */
+  background-color: rgb(200, 209, 198);
   border: solid #676767 5px;
   border-radius: 2rem;
 }
