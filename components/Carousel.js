@@ -36,7 +36,9 @@ function Carousel() {
   return (
     <section className={styles.watchSectionContainer}>
       <div className={styles.watchSectionLeft}>
-        <h1 className={styles.watchSectionLeftH1}>All your favorite brands.</h1>
+        <h1 className={styles.watchSectionLeftH1}>
+          All your favorite brands. In One Place.
+        </h1>
         {/* <h1 className={styles.watchSectionLeftH2}>One place</h1> */}
         <div className={styles.watchListContainer}>
           <div className={styles.watchList}>Rolex,</div>

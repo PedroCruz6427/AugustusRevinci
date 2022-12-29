@@ -30,13 +30,17 @@ function Navbar() {
         </section>
       ) : null}
       <nav className={styles.navBar}>
-        <button onClick={() => setShowModal(true)}>Menu</button>
+        <button className={styles.navButton} onClick={() => setShowModal(true)}>
+          Menu
+        </button>
         <logo className={styles.siteLogo}>
           <p>Augustus</p>
           <p>Revinci</p>
         </logo>
         <Link href="/cart/">
-          <button> CART:{context.nameContext}</button>
+          <button className={styles.navButton}>
+            Cart : {context.nameContext}
+          </button>
         </Link>
       </nav>
     </section>

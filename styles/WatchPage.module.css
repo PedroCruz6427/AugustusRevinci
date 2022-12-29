@@ -1,10 +1,16 @@
 .watch {
+  width: 90vw;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(76, 76, 76);
+  border: solid rgb(198, 209, 198) 3.5px;
   font-size: 1.25rem;
-  /* font-style: italic; */
+  border-radius: 2rem;
   letter-spacing: 0.3rem;
+  font-style: italic;
+  font-weight: 350;
 }
 
 .watchContainer {
@@ -17,11 +23,11 @@
   align-items: center;
 }
 .watchImage {
+  border: solid rgb(198, 209, 198) 3.5px;
   border-radius: 6rem;
   overflow: hidden;
 }
 .image {
-  background-color: red;
   height: 100%;
   width: 100%;
 }
@@ -30,25 +36,27 @@
   padding: 0.75rem;
   font-size: 4rem;
   background-color: rgb(198, 209, 198);
-  border: solid #676767 3.5px;
+  border: solid #1f1f1f 3.5px;
   border-radius: 2rem;
 }
 .price {
   padding: 0.75rem;
   font-size: 3rem;
   background-color: rgb(198, 209, 198);
-  border: solid #676767 3.5px;
+  border: solid #1f1f1f 3.5px;
   border-radius: 2rem;
 }
 .buyButton {
   margin: 2rem auto;
   padding: 0.75rem;
   font-size: 2rem;
-  background-color: rgb(198, 209, 198);
-  border: solid #676767 3.5px;
+  background-color: rgb(242, 216, 137);
+  border: solid #1f1f1f 3.5px;
   border-radius: 2rem;
   width: 18rem;
   cursor: pointer;
+  font-style: italic;
+  font-weight: 350;
 }
 .buyButton:hover {
   background-color: rgb(242, 216, 137);

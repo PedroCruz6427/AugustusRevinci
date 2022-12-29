@@ -1,9 +1,11 @@
-.body p h1 h2 h3 {
+/* .mainBody p h1 h2 h3 {
   background-color: rgb(251, 252, 253) !important;
   padding: 0;
   margin: 0;
   background-position: none;
-}
+  background-color: red;
+  height: 100%;
+} */
 .linkContainer {
   margin: 0 auto;
   font-size: 2rem;
@@ -39,6 +41,7 @@
   height: 33%;
   width: 33%;
   border: 3px solid rgb(173, 174, 173);
+  color: rgb(242, 216, 137);
 }
 
 .watchImageContainer {
@@ -52,7 +55,7 @@
 }
 .watchDescription {
   margin: 1rem auto;
-  font-size: 2rem;
+  font-size: 3rem;
   background-color: rgb(59, 60, 61);
   color: rgb(242, 216, 137);
 }
@@ -97,4 +100,65 @@
   background-color: rgb(242, 216, 137);
   box-shadow: 0px 0px 7.5px 0px rgb(255, 255, 255);
   text-decoration: none;
+}
+
+/* ==============================
+          Below 900px
+============================== */
+
+@media (max-width: 56.25em) {
+  /* ======================
+  
+            WATCHBOXES          
+  
+  ========================= */
+  .watchBox {
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 33%;
+    width: 50%;
+    margin-bottom: 15rem;
+    border: 3px solid rgb(173, 174, 173);
+    color: rgb(242, 216, 137);
+  }
+  .watchDescription {
+    margin: 1rem auto;
+    font-size: 3rem;
+    background-color: rgb(59, 60, 61);
+    color: rgb(242, 216, 137);
+  }
+  .watchPrice {
+    font-size: 2rem;
+    background-color: rgb(59, 60, 61);
+    color: rgb(242, 216, 137);
+  }
+  .buttonContainer {
+    font-size: 2rem;
+    background-color: rgb(59, 60, 61);
+    color: rgb(242, 216, 137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ==============================
+          Below 600px
+============================== */
+
+@media (max-width: 37.5em) {
+  /* ======================
+  
+            WATCHBOXES          
+  
+  ========================= */
+  .watchBox {
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 33%;
+    width: 100%;
+    margin-bottom: 15rem;
+    border: 3px solid rgb(173, 174, 173);
+    color: rgb(242, 216, 137);
+  }
 }

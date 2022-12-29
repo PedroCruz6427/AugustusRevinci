@@ -18,6 +18,15 @@ option? rgb(49, 49, 49);
 */
 
 /* ------------------------ */
+/*            FULL PAGE */
+/* ------------------------ */
+
+.body {
+  min-width: 358px;
+  width: 100%;
+}
+
+/* ------------------------ */
 /*            MODAL */
 /* ------------------------ */
 
@@ -73,6 +82,7 @@ option? rgb(49, 49, 49);
 
 .navBar {
   display: flex;
+  margin: 0 auto;
   background-color: rgb(242, 216, 137);
   justify-content: space-between;
   align-items: center;
@@ -100,8 +110,11 @@ option? rgb(49, 49, 49);
   transition: 0.2s;
 }
 .navBar button:hover {
-  background-color: rgb(250, 240, 177);
+  background-color: rgb(242, 216, 137);
   box-shadow: 0px 0px 7.5px 0px rgb(255, 255, 255);
+}
+.siteLogo {
+  margin: 0 0;
 }
 
 .siteLogo p {
@@ -214,7 +227,8 @@ option? rgb(49, 49, 49);
   line-height: 6rem;
   font-weight: 00;
   font-size: 6rem;
-  color: rgb(242, 216, 137);
+  /* color: rgb(242, 216, 137); */
+  color: rgb(250, 240, 177);
   text-align: center;
   border-radius: 2rem;
   margin: 1rem;
@@ -298,6 +312,9 @@ option? rgb(49, 49, 49);
 .watchListContainer {
   display: flex;
   justify-self: space-between;
+  align-self: center;
+  padding: 5rem;
+  flex-wrap: wrap;
   letter-spacing: 0.4rem;
   font-weight: 100;
   font-size: 2.5rem;
@@ -312,7 +329,8 @@ option? rgb(49, 49, 49);
 .shopButton {
   margin-top: 3rem;
   color: rgb(44, 44, 44);
-  background-color: rgb(250, 240, 177);
+  /* background-color: rgb(250, 240, 177); */
+  background-color: rgb(242, 216, 137);
   border-radius: 1rem;
   padding: 0.6rem;
   font-style: italic;
@@ -441,9 +459,193 @@ option? rgb(49, 49, 49);
 }
 .footerContainer button:hover {
   color: rgb(44, 44, 44);
-  background-color: rgb(250, 240, 177);
+  background-color: rgb(242, 216, 137);
   box-shadow: 0px 0px 5px 0px rgb(248, 248, 248);
 }
 /* ------------------------ */
-/*        MISC */
+/*        MEDIA QUERIES*/
 /* ------------------------ */
+/* rem and em do NOT depond on html font-size in media queries!
+Instread 1rem = 1em = 16px */
+
+/* ==============================
+          Below 600px
+============================== */
+
+@media (max-width: 37.5em) {
+  /* .body {
+    min-width: 375px;
+    width: 100%;
+  } */
+
+  .siteLogo {
+    /* display: none; */
+  }
+
+  .siteLogo p {
+    margin: 1rem;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    color: rgb(242, 216, 137);
+    text-align: center;
+  }
+
+  .femaleImg {
+    width: 40vh;
+  }
+
+  .watchSectionContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .introInfoHeader {
+    /* background-color: aqua; */
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .introInfoText {
+    background-color: aquamarine;
+    display: none;
+    font-size: 3.5rem;
+  }
+
+  .watchSectionLeft {
+    height: 5rem;
+    margin: 0;
+    order: 2;
+  }
+
+  .watchSectionLeftH1 {
+    display: none;
+  }
+  .watchListContainer {
+    display: none;
+  }
+  .watchSectionRight {
+    width: 100%;
+    margin: 0;
+    order: 1;
+  }
+  .shopButton {
+    display: flex;
+  }
+  .navButton {
+    font-size: 2rem;
+    margin: 0;
+    background-color: rgb(127, 142, 255);
+  }
+
+  .footerContainer {
+    background-color: #1f1f1f;
+    border: solid #676767 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: centers;
+    /* margin-top: 5rem; */
+    padding: 0;
+    margin: 0 auto;
+    height: 15vh;
+    width: 93%;
+    border-radius: 3rem;
+  }
+}
+
+/* ==============================
+          600px-900px
+============================== */
+@media (min-width: 37.5em) and (max-width: 56.25em) {
+  .siteLogo {
+    /* display: none; */
+  }
+  .femaleImg {
+    width: 40vh;
+  }
+
+  .watchSectionContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .introInfoHeader {
+    /* background-color: aqua; */
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+  .introInfoText {
+    /* background-color: rgb(136, 127, 255); */
+    display: none;
+    font-size: 2rem;
+  }
+
+  .watchSectionLeft {
+    height: 5rem;
+    margin: 0;
+    order: 2;
+  }
+
+  .watchSectionLeftH1 {
+    display: none;
+  }
+  .watchListContainer {
+    display: none;
+  }
+  .watchSectionRight {
+    width: 100%;
+    margin: 0;
+    order: 1;
+  }
+  .shopButton {
+    display: flex;
+  }
+  .navButton {
+    margin: 0;
+    background-color: rgb(221, 127, 255);
+  }
+}
+
+/* ==============================
+          900px-1200px
+============================== */
+@media (min-width: 56.25em) and (max-width: 75em) {
+  .siteLogo {
+    /* display: none; */
+  }
+  .femaleImg {
+    width: 40vh;
+  }
+
+  .introInfoHeader {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+  .introInfoText {
+    /* display: none; */
+    font-size: 2rem;
+  }
+
+  .watchSectionLeft {
+    height: 5rem;
+    margin: 0;
+  }
+
+  .watchListContainer {
+    display: none;
+  }
+  .watchSectionRight {
+    width: 50%;
+    margin: 0;
+  }
+  .shopButton {
+    display: flex;
+  }
+  .navButton {
+    margin: 0;
+    background-color: rgb(221, 127, 255);
+  }
+}

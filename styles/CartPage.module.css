@@ -9,10 +9,12 @@
   justify-content: space-between;
   align-items: center;
   margin: 2rem auto;
-  padding: 0.5rem;
-  background-color: rgb(198, 209, 198);
+  padding: 1rem;
+  /* background-color: rgb(209, 207, 198); */
+  background-color: rgb(250, 240, 177);
   width: 90%;
   border: solid #676767 5px;
+  border-radius: 2rem;
 }
 .imageContainer {
   height: 15rem;
@@ -26,21 +28,38 @@
 .image {
   height: 100%;
   width: 100%;
+  border-radius: 2rem;
+}
+
+.rightContainer {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .itemDescription {
-  font-size: 3rem;
+  /* -webkit-text-stroke-width: 0.55px;
+  -webkit-text-stroke-color: black;
+  color: rgb(242, 216, 137); */
+  color: rgb(37, 36, 35);
+  font-size: 4rem;
+  padding-top: 5rem;
+  font-style: italic;
 }
 .itemPrice {
   font-size: 2rem;
+  padding-top: 5rem;
 }
 
 .totalPrice {
+  margin: 2rem auto;
+  padding: 1rem;
   font-size: 2rem;
+  width: 90%;
   display: flex;
   justify-content: flex-end;
-  padding: 1rem;
-  margin: 1rem auto;
-  background-color: rgb(198, 209, 198);
+  background-color: rgb(250, 240, 177);
   border: solid #676767 5px;
+  border-radius: 2rem;
 }
