@@ -13,17 +13,17 @@ function Navbar() {
           <Link href="/shop">
             <button className={styles.modalText}>SHOP</button>
           </Link>
-          <Link href="/shop">
-            <button className={styles.modalText}>ABOUT</button>
-          </Link>
-          <Link href="/shop">
-            <button className={styles.modalText}>CUSTOMER CARE</button>
-          </Link>
-          <Link href="/shop">
-            <button className={styles.modalText}>ACCESIBILITY</button>
-          </Link>
           <Link href="/">
             <button className={styles.modalText}>HOME</button>
+          </Link>
+          <Link href="/about">
+            <button className={styles.modalText}>ABOUT</button>
+          </Link>
+          <Link href="/about">
+            <button className={styles.modalText}>CUSTOMER CARE</button>
+          </Link>
+          <Link href="/about">
+            <button className={styles.modalText}>ACCESIBILITY</button>
           </Link>
 
           <button onClick={() => setShowModal(false)}>Close</button>
@@ -33,10 +33,10 @@ function Navbar() {
         <button className={styles.navButton} onClick={() => setShowModal(true)}>
           Menu
         </button>
-        <logo className={styles.siteLogo}>
+        <div className={styles.siteLogo}>
           <p>Augustus</p>
           <p>Revinci</p>
-        </logo>
+        </div>
         <Link href="/cart/">
           <button className={styles.navButton}>
             Cart : {context.nameContext}

@@ -37,7 +37,7 @@ function Carousel() {
     <section className={styles.watchSectionContainer}>
       <div className={styles.watchSectionLeft}>
         <h1 className={styles.watchSectionLeftH1}>
-          All your favorite brands. In One Place.
+          All your favorite brands, in one place.
         </h1>
         {/* <h1 className={styles.watchSectionLeftH2}>One place</h1> */}
         <div className={styles.watchListContainer}>
@@ -65,7 +65,7 @@ function Carousel() {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              // class="w-6 h-6"
             >
               <path
                 stroke-linecap="round"
@@ -89,7 +89,7 @@ function Carousel() {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              // class="w-6 h-6"
             >
               <path
                 stroke-linecap="round"
