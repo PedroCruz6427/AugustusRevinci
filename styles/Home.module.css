@@ -520,6 +520,9 @@ Instread 1rem = 1em = 16px */
     width: 93%;
     border-radius: 3rem;
   }
+  .shopButton {
+    margin-top: 8rem;
+  }
 }
 
 /* ==============================
@@ -577,6 +580,9 @@ Instread 1rem = 1em = 16px */
     margin: 0;
     background-color: rgb(226, 222, 222);
   }
+  .shopButton {
+    margin-top: 8rem;
+  }
 }
 
 /* ==============================
@@ -611,6 +617,9 @@ Instread 1rem = 1em = 16px */
   .navButton {
     margin: 0;
     background-color: rgb(221, 127, 255);
+  }
+  .shopButton {
+    margin-top: 8rem;
   }
 }
 
