@@ -53,8 +53,8 @@ function Carousel() {
           </button>
         </Link>
         {/* <button href="/shop" className={styles.shopButton}>
-          SHOP NOW
-        </button> */}
+        SHOP NOW
+      </button> */}
       </div>
       <div className={styles.watchSectionRight}>
         <div className={styles.carouselContainer}>

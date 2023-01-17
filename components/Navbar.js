@@ -22,7 +22,7 @@ function Navbar() {
           <Link href="/about">
             <button className={styles.modalText}>CUSTOMER CARE</button>
           </Link>
-          <Link href="/about">
+          <Link href="/accessibility">
             <button className={styles.modalText}>ACCESIBILITY</button>
           </Link>
 

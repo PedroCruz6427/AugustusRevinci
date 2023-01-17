@@ -13,7 +13,7 @@ export default function About() {
       </Head>
       <Navbar />
       <body className={styles.aboutBody}>
-        <h1 className={styles.aboutHeader}>SUMMARY</h1>
+        <h1 className={styles.aboutHeader}>ADDENDUM</h1>
         <p className={styles.aboutText}>
           This is normally where an about or customer care section would be but
           since this is just a project site I thought I would add some info on

@@ -7,8 +7,6 @@ import Link from "next/link";
 import Navbar from "../components/Navbar.js";
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(false);
-
   return (
     <html>
       <Head>
@@ -40,7 +38,7 @@ export default function Home() {
               The Gold Standard watch exchange.
             </h1>
             <h3 className={styles.introInfoText}>
-              Since 2001 we've provided only the highest quality watches,
+              Since 2001 we&apos;ve provided only the highest quality watches,
               thoroughly inspected by our experts in Milan Italy.
             </h3>
           </div>
